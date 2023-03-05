@@ -35,10 +35,13 @@ import speedtest
 from pytube import YouTube
 
 
-
+VOICES = {
+    'en':  'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0',
+    'fr': 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_FR-FR_HORTENSE_11.0'
+}
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id) 
+engine.setProperty('voice',VOICES) 
 
 #Main classs where all the functiona are present
 class MainThread(QThread):
@@ -159,13 +162,17 @@ class MainThread(QThread):
             elif ("you can sleep" in self.command) or ("sleep now" in self.command):
                 self.talk("Okay, I am going to sleep")
                 break
+            elif("est ce que tu dors" in self.command) :
+                self.talk("qui")
             #command for waking the jarvis from sleep
             #jarvis wake up
             elif ("wake up" in self.command) or ("get up" in self.command):
                 self.talk("Bruh I am not sleeping i am an AI, what can I do for u")
+            elif ("salut" in self.command):
+                self.talk("je suis un robot, je ne dors pas")
             #command for exiting jarvis from the program
             #Eg: jarvis goodbye
-            elif ("goodbye" in self.command) or ("get lost" in self.command):
+            elif ("goodbye" in self.command) or ("get lost" in self.command)or("bye bye jarvis"):
                 self.talk("Thanks have a good day")
                 sys.exit()
             #command for knowing about your system condition
@@ -201,7 +208,7 @@ class MainThread(QThread):
         while True:
             self.permission = self.take_Command()
             print(self.permission)
-            if ("wake up" in self.permission) or ("get up" in self.permission):
+            if ("wake up" in self.permission) or ("get up" in self.permission)or("salut" in self.permission):
                 self.run_jarvis()
             elif ("goodbye" in self.permission) or ("get lost" in self.permission):
                 self.talk("Thanks for using me, have a good day")
@@ -528,35 +535,15 @@ class Main(QMainWindow):
         self.ui.pushButton_3.clicked.connect(self.close)
     
     def startTask(self):
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ironman1.gif")
-        # self.ui.label_2.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ringJar.gif")
-        # self.ui.label_3.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\circle.gif")
-        # self.ui.label_4.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\jarvis.gif")
-        # self.ui.label_5.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\lines1.gif")
-        # self.ui.label_7.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\ironman3.gif")
-        # self.ui.label_8.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\circle.gif")
-        # self.ui.label_9.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\powersource.gif")
-        # self.ui.label_12.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # # self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\powersource.gif")
-        # self.ui.label_13.setMovie(self.ui.movie)
-        # self.ui.movie.start()
-        # self.ui.movie.start()
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\gif.gif")
+        self.ui.label_3.setMovie(self.ui.movie)
+        self.ui.movie.start()        
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\lines1.gif")
+        self.ui.label_4.setMovie(self.ui.movie)
+        self.ui.movie.start()
+        self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\puzzle.gif")
+        self.ui.label_5.setMovie(self.ui.movie)
+        self.ui.movie.start()
         timer = QTimer(self)
         timer.timeout.connect(self.showTime)
         timer.start(1000)
