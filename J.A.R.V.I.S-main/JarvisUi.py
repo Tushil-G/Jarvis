@@ -51,7 +51,7 @@ class Ui_JarvisUI(object):
         "font-size:20px;")
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(10, 150, 1900, 610))
+        self.label_3.setGeometry(QtCore.QRect(10, 144, 1900, 612))
         self.label_3.setText("")
         self.label_3.setPixmap(QtGui.QPixmap(rf"{self.cpath}\UI\gif.gif"))
         self.label_3.setScaledContents(True)
