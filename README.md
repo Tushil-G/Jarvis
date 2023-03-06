@@ -1,6 +1,6 @@
 # Jarvis
 Jarvis is your personal assistance,that you can talk and ask to do some commands.
-## Instalation
+## Installation
 ```
 pip install -r requirements.txt
 ```
