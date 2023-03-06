@@ -11,9 +11,9 @@ python -m venv .venv
 ```
 .\.venv\Scripts\activate
 ```
-- to deativate
+- to deactivate
 ```
-deativate
+deactivate
 ```
 
 ***
