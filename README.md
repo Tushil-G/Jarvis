@@ -1,35 +1,39 @@
-# Libraries to install before running code
-
-Note:Installing of every library is important
-
-## Installation
-Note:Use [pip](https://www.youtube.com/watch?v=dQw4w9WgXcQ) to install the [Libraries](https://pip.pypa.io/en/stable/)
-
-
+# Jarvis
+Jarvis is your personal assistance,that you can talk and ask to do some commands.
+## Instalation
 ```
-pip install SpeechRecognition
-pip install pyttsx3
-pip install pywhatkit
-pip install datetime
-pip install wikipedia
-pip install pyjokes
-pip install webbrowser
-pip install subprocess
-pip install os
-pip install get
-pip install requests
-pip install smtplib
-pip install psutil
-pip install instaloader
-pip install pyaudio
-pip install PyPDF2
-pip install wave
-pip install numpy
-pip install bs4 
-pip install PyQt5
-pip install speedtest
-pip install pytube
+pip install -r requirements.txt
 ```
+# Table of contents
+Some command you can ask Jarvis
+
+| COMMAND | RESULT |
+| :---:   | :---: | 
+| wake up | It will wake up jarvis |
+| :---:   | :---: | 
+| play a song | It will play a song on youtube|
+| :---:   | :---: |
+| what is your age | A funny respone from Jarvis |
+| :---:   | :---: | 
+| time | Jarvis will tell you the time |
+| :---:   | :---: | 
+| hi/hello/heya/salut | Jarvis will repond to you |
+| :---:   | :---: | 
+| joke | Jarvis will fetch a joke from a library |
+| :---:   | :---: | 
+| date/today | It tell you the current day |
+| :---:   | :---: | 
+| silence | It will make Jarvis silent itself the time you tell it |
+| what is meant by {your reponse} | It will search information on Wikipedia |
+| :---:   | :---: | 
+| Open GitHUB | It will open this github page |
+| :---:   | :---: | 
+| open calculator/open paint/open discord/open note | It will open these apps |
+| :---:   | :---: | 
+| close claculator/close paint/closecdiscord/close note | It will close these apps |
+| 
+
+
 ## Contribution
 Tushil,Khavid,Shabneez,Martine
 

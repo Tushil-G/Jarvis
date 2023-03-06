@@ -89,10 +89,10 @@ class MainThread(QThread):
                 self.comum(self.command)
             elif ('what can you do' in self.command) or ('your name' in self.command) or ('my name' in self.command) or ('university name' in self.command):
                 self.Fun(self.command)
-            elif ('joke'in self.command) or ('date' in self.command):
+            elif ('joke'in self.command):
                 self.Fun(self.command)
             #It will tell the day Eg : Today is wednesday
-            elif ("today" in self.command):
+            elif ("today" in self.command) or ('date' in self.command):
                 day = self.Cal_day()
                 self.talk("Today is "+day)
             #command if you don't want the JARVIS to spack until for a certain time
@@ -108,11 +108,11 @@ class MainThread(QThread):
                 self.open_source(self.command)
             #Command to open desktop applications
             #It can open : caliculator, notepad,paint, teams(aka online classes), discord, spotify, ltspice,vscode(aka editor), steam, VLC media player
-            elif ('open calculator'in self.command) or ('open notepad'in self.command) or ('open paint'in self.command) or ('open online classes'in self.command) or ('open discord'in self.command) or ('open ltspice'in self.command) or ('open editor'in self.command) or ('open spotify'in self.command) or ('open steam'in self.command) or ('open media player'in self.command):
+            elif ('open calculator'in self.command) or ('open notepad'in self.command) or ('open paint'in self.command) or ('open discord'in self.command):
                 self.OpenApp(self.command)
             #Command to close desktop applications
             #It can close : caliculator, notepad,paint, discord, spotify, ltspice,vscode(aka editor), steam, VLC media player
-            elif ('close calculator'in self.command) or ('close notepad'in self.command) or ('close paint'in self.command) or ('close discord'in self.command) or ('close ltspice'in self.command) or ('close editor'in self.command) or ('close spotify'in self.command) or ('close steam'in self.command) or ('close media player'in self.command):
+            elif ('close calculator'in self.command) or ('close notepad'in self.command) or ('close paint'in self.command) or ('close discord'in self.command):
                 self.CloseApp(self.command)
             #command for opening shopping websites 
             #NOTE: you can add as many websites
@@ -305,15 +305,30 @@ class MainThread(QThread):
     #calender day
     def Cal_day(self):
         day = datetime.datetime.today().weekday() + 1
+         
+        # Data to be written to JSON
         Day_dict = {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday',4: 'Thursday', 5: 'Friday', 6: 'Saturday',7: 'Sunday'}
+        
+        # Serializing json
+        json_object = json.dumps(Day_dict, indent=4)
+        
+
         if day in Day_dict.keys():
             day_of_the_week = Day_dict[day]
             print(day_of_the_week)
+            # Writing to days.json
         
-        return day_of_the_week
+        with open("days.json", "w") as outfile:
+	        outfile.write(json_object)
+    
+        
 
+        
+        
+     
+    
     #Brower Search commands
-    def B_S(self,command):
+def B_S(self,command):
         print(command)
         try:
             # ('what is meant by' in self.command) or ('tell me about' in self.command) or ('who the heck is' in self.command)
@@ -334,7 +349,7 @@ class MainThread(QThread):
             self.No_result_found()
         
     #Browser
-    def brows(self,command):
+def brows(self,command):
         print(command)
         if 'Google' in command:
             self.talk("what should I search on google..")
@@ -347,7 +362,7 @@ class MainThread(QThread):
         else :
             self.No_result_found()
     #youtube
-    def yt(self,command):
+def yt(self,command):
         print(command)
         if 'play' in command:
             self.talk("Yo what's popping what song do you want to hear")
@@ -371,7 +386,7 @@ class MainThread(QThread):
             self.No_result_found()
         
     #Github account
-    def open_source(self,command):
+def open_source(self,command):
         print(command)
         if 'github' in command:
             self.talk('opening your github')
@@ -380,7 +395,7 @@ class MainThread(QThread):
             self.No_result_found()
     #PC allications
     #note for team  choose correct path//met en path kot zot app eter
-    def OpenApp(self,command):
+def OpenApp(self,command):
         print(command)
         if ('calculator'in command) :
             self.talk('Opening calculator')
@@ -401,7 +416,7 @@ class MainThread(QThread):
             self.No_result_found()
             
     #closeapplications function
-    def CloseApp(self,command):
+def CloseApp(self,command):
         print(command)
         if (' close calculator'in command) :
             self.talk("okay, closeing caliculator")
@@ -426,7 +441,7 @@ class MainThread(QThread):
 
    
     #Time caliculating algorithm
-    def silenceTime(self,command):
+def silenceTime(self,command):
         print(command)
         x=0
         #caliculating the given time to seconds from the speech commnd string
@@ -443,7 +458,7 @@ class MainThread(QThread):
         self.silence(x)
         
     #Silence
-    def silence(self,k):
+def silence(self,k):
         t = k
         s = "Ok I will be silent for "+str(t/60)+" minutes"
         self.talk(s)
@@ -456,7 +471,7 @@ class MainThread(QThread):
         self.talk("The "+str(k/60)+" minutes over")
 
     #location
-    def locaiton(self):
+def locaiton(self):
         self.talk("Wait , let me check")
         try:
             IP_Address = get('https://api.ipify.org').text
@@ -478,8 +493,9 @@ class MainThread(QThread):
         except Exception as e:
             self.talk("Sorry, due to network issue i am not able to find where we are.")
             pass
+
     #ScreenShot
-    def scshot(self):
+def scshot(self):
         self.talk("please tell me the name for this screenshot file")
         name = self.take_Command()
         self.talk("Please hold the screen for few seconds, I am taking screenshot")
@@ -489,7 +505,7 @@ class MainThread(QThread):
         self.talk("I am done, the screenshot is saved in the folder.")
 
     #News
-    def news(self):
+def news(self):
         MAIN_URL_= "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=991fc257532d42c7abd896a737dbdac5"
         MAIN_PAGE_ = get(MAIN_URL_).json()
         articles = MAIN_PAGE_["articles"]
@@ -503,7 +519,7 @@ class MainThread(QThread):
         self.talk("I have read you the latest news bye now")
 
     #System condition
-    def condition(self):
+def condition(self):
         usage = str(psutil.cpu_percent())
         self.talk("CPU is at"+usage+" percentage")
         battray = psutil.sensors_battery()
@@ -519,7 +535,7 @@ class MainThread(QThread):
             self.talk(f"we have very low power, please connect to charging otherwise the system will shutdown very soon")
         
     #no result found
-    def No_result_found(self):
+def No_result_found(self):
         self.talk('I couldn\'t understand, could you please say it again.')        
 
 startExecution = MainThread()
