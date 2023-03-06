@@ -1,12 +1,12 @@
-#Librariries to install before running code
+# Librariries to install before running code
 
 Note:Installing of every library is important
 
-##Installation
+## Installation
 Note:Use [pip] to install the Librariries
 
 
-```bash
+```
 pip install SpeechRecognition
 pip install pyttsx3
 pip install pywhatkit
@@ -33,7 +33,7 @@ pip install pytube
 ## Contribution
 Tushil,Khavid,Shabneez,Martine
 
-##Lisence
+## Lisence
 [MIT]--Copyright (c) 2021 Bolisetty Sujith
 
 
