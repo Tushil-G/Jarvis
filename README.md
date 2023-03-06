@@ -21,8 +21,18 @@ Some command you can ask Jarvis
 | Open GitHUB | It will open this github page |
 | open calculator/open paint/open discord/open note | It will open these apps |
 | close claculator/close paint/closecdiscord/close note | It will close these apps |
-| were am i | It will tell you the location |
-| 
+| where am i | It will tell you the location |
+| Command prompt | It will open Command prompt |
+| take a screenshot | It will take a screenshot |
+| Volume up/down | Lower or increase Volume |
+| ip address | It will tell you your ip |
+| Weather | It will tell the weather |
+| News | It will give you the news |
+| Internet speed | It will tell you the internet speed |
+| bye bye jarvis | jarvis will respond to you |
+| Shut down/ restart/condition/sleep | It will perform these action |
+** Note: for some of these command to work add your own path way **
+
 
 ## Contribution
 Tushil,Khavid,Shabneez,Martine
