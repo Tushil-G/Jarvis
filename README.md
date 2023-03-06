@@ -5,7 +5,9 @@ Jarvis is your personal assistance,that you can talk and ask to do some commands
 pip install -r requirements.txt
 ```
 # Table of contents
-Some command you can ask Jarvis
+***
+**Some command you can ask Jarvis**
+***
 
 | COMMAND | RESULT |
 | :---:   | :---: | 
