@@ -1,5 +1,5 @@
 # Jarvis
-Jarvis is your personal assistance, that you can talk and ask to do some commands.
+Jarvis is your personal assistant, that you can talk and ask to do some commands.
 ## Installation
 ```
 pip install -r requirements.txt
