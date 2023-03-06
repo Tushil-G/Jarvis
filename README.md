@@ -2,7 +2,13 @@
 Jarvis is your personal assistant, that you can talk and ask to do some commands.
 ***
 **Note: jarvis_hackathon is the main**
-**Side note: Use virtual environment to save place**
+
+```
+py JARVIS.py
+```
+
+**Side Note: Use virtual environment to save space**
+
 ```
 python -m venv .venv
 ```
