@@ -34,6 +34,6 @@ pip install pytube
 Tushil,Khavid,Shabneez,Martine
 
 ## Lisence
-[MIT]--Copyright (c) 2021 Bolisetty Sujith
+[MIT](Copyright (c) 2021 Bolisetty Sujith)
 
 
