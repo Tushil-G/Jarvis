@@ -9,10 +9,12 @@ py JARVIS.py
 
 **Side Note: Use virtual environment to save space**
 
+- to create the virtual environment
+
 ```
 python -m venv .venv
 ```
-- to create the virtual environment
+
 - to activate it
 ```
 .\.venv\Scripts\activate
