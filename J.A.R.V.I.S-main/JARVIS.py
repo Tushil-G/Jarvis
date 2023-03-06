@@ -61,7 +61,8 @@ class MainThread(QThread):
                 listener.pause_threshold = 1
                 voice = listener.listen(source,timeout=4,phrase_time_limit=7)
                 print("Recognizing...")
-                command1 = listener.recognize_google(voice,language='en-in')
+                command1 = listener.recognize_google(voice,language='en-in') and listener.recognize_google(voice,language='fr-in')
+                
                 command1 = command1.lower()  
                 if 'jarvis' in command1: 
                     command1 = command1.replace('jarvis','')
@@ -549,6 +550,7 @@ class Main(QMainWindow):
         self.ui.setupUi(self)
         self.ui.pushButton_4.clicked.connect(self.startTask)
         self.ui.pushButton_3.clicked.connect(self.close)
+       
     
     def startTask(self):
         self.ui.movie = QtGui.QMovie(rf"{self.cpath}\UI\gif.gif")
