@@ -173,7 +173,7 @@ class MainThread(QThread):
                 self.talk("je suis un robot, je ne dors pas")
             #command for exiting jarvis from the program
             #Eg: jarvis goodbye
-            elif ("goodbye" in self.command) or ("get lost" in self.command)or("bye bye jarvis"):
+            elif ("goodbye" in self.command) or ("get lost" in self.command)or("bye bye jarvis" in self.command):
                 self.talk("Thanks have a good day")
                 sys.exit()
             #command for knowing about your system condition
