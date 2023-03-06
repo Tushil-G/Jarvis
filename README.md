@@ -3,7 +3,7 @@
 Note:Installing of every library is important
 
 ## Installation
-Note:Use [pip](https://pip.pypa.io/en/stable/) to install the Librariries
+Note:Use [pip](https://pip.pypa.io/en/stable/) to install the Libraries
 
 
 ```
