@@ -43,7 +43,7 @@ pip install -r requirements.txt
 | hi/hello/heya/salut | Jarvis will repond to you |
 | joke | Jarvis will fetch a joke from a library |
 | date/today | It tell you the current day |
-| silence | It will make Jarvis silent itself the time you tell it |
+| silence | It will make Jarvis silent itself for the time you tell it to |
 | what is meant by {your reponse} | It will search information on Wikipedia |
 | Open GitHUB | It will open this github page |
 | open calculator/open paint/open discord/open note | It will open these apps |
