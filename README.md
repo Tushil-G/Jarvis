@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 # Table of contents
 ***
-**Some command you can ask Jarvis**
+**Some commands you can ask Jarvis**
 ***
 
 | COMMAND | RESULT |
