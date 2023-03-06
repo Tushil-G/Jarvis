@@ -117,7 +117,7 @@ class MainThread(QThread):
             #command for opening shopping websites 
             #NOTE: you can add as many websites
             #command for asking your current location
-            elif ('where i am' in self.command) or ('where we are' in self.command):
+            elif ('where am i' in self.command) or ('where we are' in self.command):
                 self.locaiton()
             #command for opening command prompt 
             #Eg: jarvis open command prompt
