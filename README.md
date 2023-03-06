@@ -31,6 +31,7 @@ Some command you can ask Jarvis
 | Internet speed | It will tell you the internet speed |
 | bye bye jarvis | jarvis will respond to you |
 | Shut down/ restart/condition/sleep | It will perform these action |
+
 ** Note: for some of these command to work add your own path way **
 
 
