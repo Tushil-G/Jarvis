@@ -1,5 +1,22 @@
 # Jarvis
 Jarvis is your personal assistant, that you can talk and ask to do some commands.
+***
+**Note: jarvis_hackathon is the main**
+**Side note: Use virtual environment to save place**
+```
+python -m venv .venv
+```
+- to create the virtual environment
+- to activate it
+```
+.\.venv\Scripts\activate
+```
+- to deativate
+```
+deativate
+```
+
+***
 ## Installation
 ```
 pip install -r requirements.txt
