@@ -11,7 +11,6 @@ import webbrowser
 import time
 import subprocess
 import os
-import cv2
 import random
 from requests import get
 import smtplib
@@ -151,7 +150,7 @@ class MainThread(QThread):
                 self.talk(f"your IP address is {ip}")
             #command for checking the temperature in surroundings
             #jarvis check the surroundings temperature
-            elif "temperature" in self.command:
+            elif ("temperature" in self.command)or("weather" in self.command):
                 self.temperature()
             #command for checking internet speed
             #Eg: jarvis check my internet speed
@@ -390,13 +389,13 @@ class MainThread(QThread):
             os.startfile('c:\\Windows\\System32\\mspaint.exe')
         elif ('discord'in command) :
             self.talk('Opening discord')
-            os.startfile('..\\..\\Discord.exe')
+            os.startfile('c:\\Windows\\System32\\Discord.exe')
         elif ('editor'in command) :
             self.talk('Opening your Visual studio code')
-            os.startfile('..\\..\\Code.exe')
+            os.startfile('c\\Windows\\System32\\Code.exe')
         elif ('spotify'in command) :
             self.talk('Opening spotify')
-            os.startfile('..\\..\\Spotify.exe')
+            os.startfile('c.\\Windows\\System32\\Spotify.exe')
         else :
             self.No_result_found()
             
