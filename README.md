@@ -1,9 +1,9 @@
-# Librariries to install before running code
+# Libraries to install before running code
 
 Note:Installing of every library is important
 
 ## Installation
-Note:Use [pip] to install the Librariries
+Note:Use [pip](https://pip.pypa.io/en/stable/) to install the Librariries
 
 
 ```
@@ -34,6 +34,7 @@ pip install pytube
 Tushil,Khavid,Shabneez,Martine
 
 ## Lisence
-[MIT](Copyright (c) 2021 Bolisetty Sujith)
+```MIT```
+(Copyright (c) 2021 Bolisetty Sujith)
 
 
