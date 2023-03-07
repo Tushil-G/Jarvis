@@ -61,7 +61,7 @@ class MainThread(QThread):
                 listener.pause_threshold = 1
                 voice = listener.listen(source,timeout=4,phrase_time_limit=7)
                 print("Recognizing...")
-                command1 = listener.recognize_google(voice,language='en-in') and listener.recognize_google(voice,language='fr-in')
+                command1 = listener.recognize_google(voice,language='en-in') or (listener.recognize_google(voice,language='fr-in'))
                 
                 command1 = command1.lower()  
                 if 'jarvis' in command1: 
@@ -317,6 +317,7 @@ class MainThread(QThread):
         if day in Day_dict.keys():
             day_of_the_week = Day_dict[day]
             print(day_of_the_week)
+            return day_of_the_week
             # Writing to days.json
         
         with open("days.json", "w") as outfile:
