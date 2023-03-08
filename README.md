@@ -55,7 +55,7 @@ pip install -r requirements.txt
 | ip address | It will tell you your ip |
 | Weather | It will tell the weather |
 | News | It will give you the news |
-| Internet speed | It will tell you the internet speed |
+| Internet speed | This command will tell you your Internet speed |
 | bye bye jarvis | jarvis will respond to you |
 | Shut down/ restart/condition/sleep | It will perform one of these actions |
 
