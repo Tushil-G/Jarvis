@@ -65,7 +65,10 @@ pip install -r requirements.txt
 
 
 ## Contribution
-Tushil,Khavid,Shabneez,Martine
+- Tushil
+- Khavid
+- Shabneez
+- Martine
 
 ## Lisence
 ```MIT```
