@@ -31,7 +31,7 @@ deactivate
 pip install -r requirements.txt
 ```
 # Table of contents
-***
+
 **Some commands you can ask Jarvis**
 ***
 
