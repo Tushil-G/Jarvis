@@ -36,20 +36,20 @@ pip install -r requirements.txt
 
 | COMMAND | RESULT |
 | :---:   | :---: | 
-| wake up | It will wake up jarvis |
-| play a song | It will play a song on youtube|
-| what is your age | A funny respone from Jarvis |
-| time | Jarvis will tell you the time |
-| hi/hello/heya/salut | Jarvis will repond to you |
+| wake up | This command will wake jarvis up |
+| play a song | This command will play a song |
+| what is your age | A funny response from Jarvis |
+| time | This command will tell you the time |
+| hi/hello/heya/salut | Jarvis will respond to you |
 | joke | Jarvis will fetch a joke from a library |
-| date/today | It tell you the current day |
-| silence | It will make Jarvis silent itself for the time you tell it to |
-| what is meant by {your reponse} | It will search information on Wikipedia |
+| date/today | This command tells you the current day |
+| silence {your response} | It will make Jarvis silent itself for a specific time  |
+| what is meant by {your response} | This command will search {your response} on Wikipedia |
 | Open GitHUB | It will open this github page |
-| open calculator/open paint/open discord/open note | It will open these apps |
-| close claculator/close paint/closecdiscord/close note | It will close these apps |
-| where am i | It will tell you the location |
-| Command prompt | It will open Command prompt |
+| open calculator/open paint/open discord/open note | It will open one of these apps |
+| close claculator/close paint/closecdiscord/close note | It will close one of these apps |
+| where am i | It will tell you your location |
+| Command prompt | This command will open the Command prompt |
 | take a screenshot | It will take a screenshot |
 | Volume up/down | Lower or increase Volume |
 | ip address | It will tell you your ip |
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 | News | It will give you the news |
 | Internet speed | It will tell you the internet speed |
 | bye bye jarvis | jarvis will respond to you |
-| Shut down/ restart/condition/sleep | It will perform these action |
+| Shut down/ restart/condition/sleep | It will perform one of these actions |
 
 ***
 **Note: for some of these command to work add your own path way**
