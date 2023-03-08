@@ -67,9 +67,9 @@ pip install -r requirements.txt
 
 ## Contribution
 - Tushil
-- Khavid
-- Shabneez
-- Martine
+- [Khavid](https://github.com/Hemlesh18)
+- [Shabneez](https://github.com/Shab20)
+- [Martine](https://github.com/martine18)
 
 ## Lisence
 ```MIT```
