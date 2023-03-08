@@ -1,5 +1,5 @@
 # Jarvis
-Jarvis is your personal assistant, you can talk and command her to do some **functions**
+Jarvis acts like a **personal assistant** that you can **communicate to** and give different **commands**.
 ***
 **Note: jarvis_hackathon is the main**
 
