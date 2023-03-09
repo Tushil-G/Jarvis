@@ -1,7 +1,8 @@
 # Jarvis
-Jarvis is your personal assistant, that you can talk and ask to do some commands.
+Jarvis acts like a **personal assistant** that you can **communicate to** and give different **commands**.
 ***
 **Note: jarvis_hackathon is the main**
+***
 
 ```
 py JARVIS.py
@@ -30,6 +31,7 @@ deactivate
 pip install -r requirements.txt
 ```
 # Table of contents
+
 ***
 **Some commands you can ask Jarvis**
 ***
@@ -65,7 +67,10 @@ pip install -r requirements.txt
 
 
 ## Contribution
-Tushil,Khavid,Shabneez,Martine
+- Tushil
+- [Khavid](https://github.com/Hemlesh18)
+- [Shabneez](https://github.com/Shab20)
+- [Martine](https://github.com/martine18)
 
 ## Lisence
 ```MIT```
