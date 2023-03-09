@@ -12,9 +12,7 @@ import time
 import os
 from requests import get
 import psutil
-import instaloader
 import pyautogui
-import PyPDF2
 import numpy as np 
 from bs4 import BeautifulSoup
 from PyQt5 import QtWidgets, QtCore, QtGui
