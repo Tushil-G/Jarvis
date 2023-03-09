@@ -4,23 +4,17 @@ import sys
 import speech_recognition as sr
 import pyttsx3
 import pywhatkit
-import pywhatkit as kit
 import datetime
 import wikipedia
 import pyjokes
 import webbrowser
 import time
-import subprocess
 import os
-import random
 from requests import get
-import smtplib
 import psutil
 import instaloader
 import pyautogui
 import PyPDF2
-import pyaudio
-import wave
 import numpy as np 
 from bs4 import BeautifulSoup
 from PyQt5 import QtWidgets, QtCore, QtGui
