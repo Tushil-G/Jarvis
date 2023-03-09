@@ -1,30 +1,34 @@
 #Jarvis--by team JTMS
-import json
-import sys
-import speech_recognition as sr
-import pyttsx3
-import pywhatkit
 import datetime
-import wikipedia
-import pyjokes
-import webbrowser
-import time
+import json
 import os
-from requests import get
+import sys
+import time
+import webbrowser
+import isort
+import numpy as np
 import psutil
 import pyautogui
-import numpy as np 
+import pyjokes
+import pyttsx3
+import pywhatkit
+import speech_recognition as sr
+import speedtest
+import wikipedia
 from bs4 import BeautifulSoup
-from PyQt5 import QtWidgets, QtCore, QtGui
-from PyQt5.QtCore import QTimer,QTime,QDate,Qt
-from PyQt5.QtGui import QMovie
-from PyQt5.QtGui import *
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import *
+from PyQt5.QtCore import QDate, Qt, QTime, QTimer
+from PyQt5.QtGui import *
+from PyQt5.QtGui import QMovie
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUiType
-from JarvisUi import Ui_JarvisUI
-import speedtest
 from pytube import YouTube
+from requests import get
+
+from JarvisUi import Ui_JarvisUI
+
+isort.file("JARVIS.py")#to sort Import libraries
 
 
 VOICES = {
