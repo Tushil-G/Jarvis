@@ -13,7 +13,7 @@ py JARVIS.py
 - to create the virtual environment
 
 ```
-python -m venv .venv
+`python -m venv .venv`
 ```
 
 - to activate it
