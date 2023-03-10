@@ -5,7 +5,7 @@ Jarvis acts like a **personal assistant** that you can **communicate to** and gi
 ***
 
 ```html
-<style background-colour : red>py JARVIS.py</style>
+<style background-colour : red> py JARVIS.py </style>
 ```
 
 
