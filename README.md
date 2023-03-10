@@ -10,7 +10,7 @@ py JARVIS.py
 
 
 
-`**Side Note:**` **Use virtual environment to save space**
+**`Side Note:`** **Use virtual environment to save space**
 
 - to create the virtual environment
 
