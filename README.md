@@ -8,7 +8,7 @@ Jarvis acts like a **personal assistant** that you can **communicate to** and gi
 py JARVIS.py
 ```
 
-**<mark>Side Note:</mark> Use virtual environment to save space**
+**<mark style="background-colour: Red">Side Note:</mark> Use virtual environment to save space**
 
 - to create the virtual environment
 
