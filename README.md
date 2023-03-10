@@ -4,8 +4,8 @@ Jarvis acts like a **personal assistant** that you can **communicate to** and gi
 **`Note:`** **jarvis_hackathon is the main**
 ***
 
-```html
-<style background-colour : red> py JARVIS.py </style>
+```
+py JARVIS.py 
 ```
 
 
