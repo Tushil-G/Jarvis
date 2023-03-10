@@ -1,14 +1,16 @@
 # Jarvis
 Jarvis acts like a **personal assistant** that you can **communicate to** and give different **commands**.
 ***
-**Note: jarvis_hackathon is the main**
+**`Note:`** **jarvis_hackathon is the main**
 ***
 
-```html
-<style background-colour: red> py JARVIS.py </style>
+```
+py JARVIS.py
 ```
 
-**Side Note: Use virtual environment to save space**
+
+
+**`Side Note:`** **Use virtual environment to save space**
 
 - to create the virtual environment
 
@@ -62,7 +64,7 @@ pip install -r requirements.txt
 | Shut down/ restart/condition/sleep | It will perform one of these actions |
 
 ***
-**Note: for some of these command to work add your own path way**
+**`Note:`** **for some of these command to work add your own path way**
 ***
 
 
