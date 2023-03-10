@@ -4,8 +4,8 @@ Jarvis acts like a **personal assistant** that you can **communicate to** and gi
 **`Note:`** **jarvis_hackathon is the main**
 ***
 
-```diff
-@@ py JARVIS.py @@
+```
+py JARVIS.py 
 ```
 
 **`Side Note:`** **Use virtual environment to save space**
