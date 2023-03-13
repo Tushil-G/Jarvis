@@ -76,7 +76,6 @@ pip install -r requirements.txt
 
 ## Lisence
 ```MIT```
-
-- Copyright (c) 2021 Bolisetty Sujith
+Copyright (c) 2021 Bolisetty Sujith
 
 
